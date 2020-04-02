@@ -1,0 +1,92 @@
+body {
+  background-color: #F8F8FF;
+}
+
+h1{
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+h2{
+    font-family: "Times New Roman", Times, serif;
+   
+}
+body{
+    border: 10px #F0F8FF;
+    background-color: rgb(169, 221, 241);
+}
+
+ul{
+    width: 30%;
+    border: 10px #F0F8FF;
+    float: bottom;
+    box-shadow: 2px 2px 2px #696969;
+    background-color: rgba(156, 250, 156, 0.705);
+    border-radius: 10px ;
+    margin: 10px;  
+    text-align: left;
+}
+
+.output{
+    width: 15%;
+    border: 10px #F0F8FF;
+    float: bottom;
+    box-shadow: 2px 2px 2px #4e4e4e;
+    background-color: rgb(156, 250, 156, 0.705);
+    border-radius: 10px ;
+    margin: left;
+    padding: 15px;
+    text-align: center;
+    font-family:"Times New Roman", Times, serif;
+
+
+}
+
+.wrap {
+	perspective: 800px;
+    perspective-origin: 50% 100px;
+    
+}
+
+.cube {
+	position: relative;
+	width: 20%;
+    transform-style: preserve-3d;
+    
+    
+}
+
+.cube div {
+    position: absolute;
+    width:200px;
+    height: 200px;
+    box-shadow: 0px 0px 30px rgba(136, 226, 63, 0.8);
+    left:50rem;
+    padding: 1px;
+    float: bottom;
+    left: 45rem; top: -15rem;
+}
+
+
+.back {
+	transform: translateZ(-100px) rotateY(180deg);
+}
+.right {
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+}
+.left {
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+}
+.top {
+	transform: rotateX(-90deg) translateY(-100px);
+	transform-origin: top center;
+}
+.bottom {
+	transform: rotateX(90deg) translateY(100px);
+	transform-origin: bottom center;
+}
+.front {
+	transform: translateZ(100px);
+}
