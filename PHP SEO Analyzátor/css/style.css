@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  background: #2e2d2d;
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  line-height: 1.6;
+  height: 100%;
+}
+
+body main .wrap {
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body main .wrap form {
+  width: 350px;
+  margin: auto;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: inset 0px 2.5px 10px -4px rgba(0, 0, 0, 0.41);
+  box-shadow: inset 0px 2.5px 10px -4px rgba(0, 0, 0, 0.41);
+}
+
+body main .wrap form input[type="text"] {
+  text-align: center;
+  border-radius: 5px;
+  border-style: none;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.554);
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+body main .wrap form input[type="submit"] {
+  background: rgba(0, 204, 255, 0.554);
+  border-radius: 5px;
+  border-style: none;
+  color: #ffffff;
+  padding: 10px;
+  width: 100%;
+}
+
+body main .wrap form input[type="submit"]:hover {
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
+  background: #00c3ff;
+}
+
+body main .wrap form h3 {
+  text-align: center;
+  color: rgba(245, 245, 245, 0.842);
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+body main .output {
+  text-align: center;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #e4e4e45e;
+  border-radius: 25px;
+}
+/*# sourceMappingURL=style.css.map */
