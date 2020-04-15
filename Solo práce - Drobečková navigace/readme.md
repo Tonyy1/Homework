@@ -1,6 +1,6 @@
-# Responsivní Drobeèková navigace - solo práce
-## Pro tuto úlohu jsem pouil svoji pøedchozí práci. Byly pouity technologie: HTML, SCSS.
-## ! Na webovém hostingu jsou reklamy, tudí responsivita není stejná, jako kdy si HTML soubor otevøete sám v prohlíeèi.
-## Odkaz na statickou webovou stránku: http://tonyyhoserver.kvalitne.cz/breadcrumbNavigation.html
-![img1]("https://ctrlv.cz/shots/2020/04/16/3xib.png")
-![img2]("https://ctrlv.cz/shots/2020/04/16/ZeDj.png")
+# ResponsivnÃ­ DrobeÄkovÃ¡ navigace - solo prÃ¡ce
+## Pro tuto Ãºlohu jsem pouÅ¾il svoji pÅ™edchozÃ­ prÃ¡ci. Byly pouÅ¾ity technologie: HTML, SCSS.
+## ! Na webovÃ©m hostingu jsou reklamy, tudÃ­Å¾ responsivita nenÃ­ stejnÃ¡, jako kdyÅ¾ si HTML soubor otevÅ™ete sÃ¡m v prohlÃ­Å¾eÄi.
+## Odkaz na statickou webovou strÃ¡nku: http://tonyyhoserver.kvalitne.cz/breadcrumbNavigation.html
+![img1](https://ctrlv.cz/shots/2020/04/16/3xib.png)
+![img2](https://ctrlv.cz/shots/2020/04/16/ZeDj.png)
