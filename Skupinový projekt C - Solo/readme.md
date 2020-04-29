@@ -1,5 +1,5 @@
-# Skupinovı projekt C - Solo
-## Tato aplikace napsaná v jazyce JavaFX zobrazuje dvì 2D kulièky, které se odráejí od stìn a samy od sebe.
-## Kulièky neztrácejí energii.
-## Matice odpovìdnosti: Celı program: Antonín Vojtìch
-! [img1] ("")
+# SkupinovÃ½ projekt C - Solo
+## Tato aplikace napsanÃ¡ v jazyce JavaFX zobrazuje dvÄ› 2D kuliÄky, kterÃ© se odrÃ¡Å¾ejÃ­ od stÄ›n a samy od sebe.
+## KuliÄky neztrÃ¡cejÃ­ energii.
+## Matice odpovÄ›dnosti: CelÃ½ program: AntonÃ­n VojtÄ›ch
+![img1](https://ctrlv.cz/shots/2020/04/29/mJCm.png)
