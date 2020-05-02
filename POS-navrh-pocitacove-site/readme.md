@@ -19,5 +19,5 @@
 ## Celková cena: 90 500 Kč
 
 ## Půdorys
-![img1] (https://ctrlv.cz/shots/2020/05/03/f4OS.png)
+![img1](https://ctrlv.cz/shots/2020/05/03/f4OS.png)
 
