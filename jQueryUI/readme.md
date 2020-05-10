@@ -1,10 +1,11 @@
-# jQueryUI - registraèní formuláø
-## Technlogoie: HTML, PHP, CSS, jQuery, Bootstrap a pár externích Javascript knihoven
-## Web hosting opìt kazí responsivitu
+# jQueryUI - registraÄnÃ­ formulÃ¡Å™
+## Technlogoie: HTML, PHP, CSS, jQuery, Bootstrap a pÃ¡r externÃ­ch Javascript knihoven
+## Web hosting opÄ›t kazÃ­ responsivitu
 ## Odkaz: http://tonyyhoserver.kvalitne.cz/jqueryFinal.php
-### Po naètení
+### Po naÄtenÃ­
 ![img](http://imgWorld.cz/s3/yzUICYUBoK.PNG)
-### Po zadání údajù
+### Po zadÃ¡nÃ­ ÃºdajÅ¯
 ![img2](http://imgWorld.cz/s3/VycJntm8Gf.PNG)
-### Vıpis údajù
+### VÃ½pis ÃºdajÅ¯
 ![img3](http://imgWorld.cz/s3/XJBamVO3OP.PNG)
+#### PS. HroznÄ› mÄ› to nebavilo, tak snad alespoÅˆ dostanu za 3 :D
