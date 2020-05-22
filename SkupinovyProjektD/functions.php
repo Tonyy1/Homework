@@ -7,7 +7,6 @@ global $link;
 "<!--Připojení k databázi, konfigurace zdroje login údajů-->";
 $config = parse_ini_file('config.ini');
 $link = mysqli_connect($config['servername'], $config['username'], $config['password'], $config['dbname']);
-// Check connection
 if ($link->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -64,12 +63,10 @@ function Insert($link)
         $latitude = $_POST["latitude"];
         $longitude = $_POST["longitude"];
 
-        // Check connection
         if ($link === false) {
             die("ERROR: Could not connect. " . mysqli_connect_error());
         }
 
-        // Attempt insert query execution
         $sql =  "INSERT INTO place (name, latitude, longitude) VALUES ('$name', '$latitude', '$longitude')";
         if (mysqli_query($link, $sql)) {
             echo "Záznamy added successfully.";
