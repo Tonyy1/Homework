@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+}
+
+body {
+    background: #28292b;
+    text-align: center;
+}
+
+header {
+    background: #323236;
+}
+
+body h1 {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+body h2 {
+    margin: 20px 0 20px 0;
+}
+
+body h3 {
+    margin-bottom: 20px;
+}
+
+.nadpis {
+    font-size: 20px;
+}
+
+body p:first-of-type {
+    padding-top: 15px;
+}
+
+body p:last-of-type {
+    padding-bottom: 15px;
+}
+
+body a {
+    font-size: 16px;
+    color: #4287f5;
+    text-decoration: none;
+
+}
+
+body a:hover {
+    color: #c41010;
+    transition: ease-in-out;
+    transition-duration: 100ms;
+    text-decoration: underline;
+}
+
+#mapa {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 5px 4px 17px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 4px 17px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 4px 17px -2px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+    padding: 10px 0 10px 0;
+    background: #323236;
+}
+
+input {
+    display: block;
+    color: black;
+    margin: 1px auto 5px auto;
+    text-align: center;
+    font-size: 13px;
+    border-width: 2px;
+    border-color: #cccccc;
+    border-radius: 12px;
+    border-style: hidden;
+    padding: 8px;
+    outline: none;
+}
+
+input[type="submit"] {
+    color: black;
+    background: whitesmoke;
+    padding: 6px;
+}
+
+input[type="submit"]:hover {
+    background: #4287f5;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+
+    body p {
+        font-size: 13px;
+    }
+
+    #mapa {
+        width: 400px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    #mapa {
+        width: 300px;
+    }
+}
