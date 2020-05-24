@@ -9,5 +9,5 @@
                          Patrik Nagy: Databáze a CSS
                          Jiří Vízner: HTML
                          Marek Flanderka: CSS, HTML
-![img1]("https://ctrlv.cz/shots/2020/05/22/nzE1.png")
-![img2]("https://ctrlv.cz/shots/2020/05/22/dCqc.png")
+![img1](https://ctrlv.cz/shots/2020/05/22/nzE1.png)
+![img2](https://ctrlv.cz/shots/2020/05/22/dCqc.png)
