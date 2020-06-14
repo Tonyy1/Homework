@@ -1,2 +1,2 @@
 # UML Class Diagram pro TextArt
-![img](diagram.png)
+![img](diagram2.png)
