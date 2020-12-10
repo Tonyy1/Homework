@@ -6,7 +6,7 @@ class Neco
     public $count = 0;
 
     //Kdo ví
-    
+
     function uloha1()
     {
         $p = [];
@@ -50,12 +50,17 @@ class Neco
     function part1($n): int
     {
         $use = 1;
-        for ($l = 0; $l < $n; $l++) {
-            $result1 = $use * ($l + 1);
-            $use = $result1;
-            if ($l == $n - 1) {
-                echo $result1 . '<br>';
-                return $result1;
+        if ($n == 0 || $n == 1) {
+            echo '1' . '<br>';
+            return 1;
+        } else {
+            for ($l = 0; $l < $n; $l++) {
+                $result1 = $use * ($l + 1);
+                $use = $result1;
+                if ($l == $n - 1) {
+                    echo $result1 . '<br>';
+                    return $result1;
+                }
             }
         }
     }
@@ -66,8 +71,11 @@ class Neco
     {
         if ($this->count == 0) {
             $this->nerad = $m - 1;
+            if ($m == 0 || $m == 1) {
+                echo '1';
+                return 1;
+            }
         }
-
         $result1 = $m * ($this->count + 1);
         $this->count += 1;
         if ($this->count == $this->nerad) {
@@ -77,5 +85,4 @@ class Neco
         }
         return $result1;
     }
-
 }
