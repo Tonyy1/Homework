@@ -20,9 +20,8 @@ class Neco
 
     function uloha2()
     {
-        $p1 = [4, 2, 1, 3];
-        $q = sort($p1);
-        for ($z = 0; $z < count($p1); $z++) {
+        $p1 = [4, 2, 1, 3, 6];
+        for ($z = (count($p1) - 1); $z >= 0; $z--) {
             echo $p1[$z] . " ";
         }
         echo '<br>';
@@ -75,8 +74,9 @@ class Neco
         if ($this->count == $this->nerad) {
             echo $result1 . '<br>';
         } else {
-            $this->part2($result1, $this->count);
+            $this->part2($result1);
         }
-        return $result1;
+        return ($result1);
     }
+
 }
