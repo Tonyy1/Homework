@@ -5,7 +5,6 @@ class Neco
     public $nerad = 0;
     public $count = 0;
 
-
     //Kdo ví
     
     function uloha1()
@@ -76,7 +75,7 @@ class Neco
         } else {
             $this->part2($result1);
         }
-        return ($result1);
+        return $result1;
     }
 
 }
