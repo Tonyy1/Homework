@@ -2,9 +2,6 @@
 
 class Neco
 {
-    public $nerad = 0;
-    public $count = 0;
-
     //Kdo ví
 
     function uloha1()
@@ -15,34 +12,22 @@ class Neco
         echo '<br>';
     }
 
-    //Seřazení pole
+    //Obrácení pole
 
     function uloha2()
     {
-        $p1 = [4, 2, 1, 3, 6];
-        for ($z = (count($p1) - 1); $z >= 0; $z--) {
-            echo $p1[$z] . " ";
-        }
-        echo '<br>';
+        $p = [4, 2, 1, 3, 6];
+        echo implode(",", (array_reverse($p))) . '<br>';
     }
 
     //Výpočet průměru
 
     function avg($x, $y, $z): float
     {
-        if ($y == NULL && $z == NULL) {
-            $result = $x / 1;
-            echo $result . '<br>';
-            return $result;
-        } elseif ($z == NULL) {
-            $result = ($x + $y) / 2;
-            echo $result . '<br>';
-            return $result;
-        } else {
-            $result = ($x + $y + $z) / 3;
-            echo $result . '<br>';
-            return $result;
-        }
+        $p = [$x, $y, $z];
+        $p = array_filter($p);
+        $result = array_sum($p) / count($p);
+        return $result;
     }
 
     //Nerekurzivní
@@ -50,16 +35,14 @@ class Neco
     function part1($n): int
     {
         $use = 1;
-        if ($n == 0 || $n == 1) {
-            echo '1' . '<br>';
+        if ($n <= 1) {
             return 1;
         } else {
             for ($l = 0; $l < $n; $l++) {
-                $result1 = $use * ($l + 1);
-                $use = $result1;
+                $result = $use * ($l + 1);
+                $use = $result;
                 if ($l == $n - 1) {
-                    echo $result1 . '<br>';
-                    return $result1;
+                    return $result;
                 }
             }
         }
@@ -69,20 +52,10 @@ class Neco
 
     function part2($m): int
     {
-        if ($this->count == 0) {
-            $this->nerad = $m - 1;
-            if ($m == 0 || $m == 1) {
-                echo '1';
-                return 1;
-            }
-        }
-        $result1 = $m * ($this->count + 1);
-        $this->count += 1;
-        if ($this->count == $this->nerad) {
-            echo $result1 . '<br>';
+        if ($m <= 1) {
+            return 1;
         } else {
-            $this->part2($result1);
+            return $m * $this->part2($m - 1);
         }
-        return $result1;
     }
 }
