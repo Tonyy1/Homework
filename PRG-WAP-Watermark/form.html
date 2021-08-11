@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tady by se s tím dalo vyhrát :)</title>
+</head>
+
+<style>
+    * {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+
+    div {
+        font-size: 1.2rem;
+    }
+</style>
+
+<body>
+    <h1>Ultimate watermark adder (stamper)</h1>
+    <form action="../../../../Pracovn�%20soubory/Anton�n%20Vojt&#283;ch/Vodoznak%20-%20PRG%20_%20WAP/add-watermark.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" id="fileToUpload" required>
+        <input type="submit" value="Vložit watermark pomocí obrázku" name="submitImgMode">
+        <input type="submit" value="Vložit watermark pomocí textu" name="submitTextMode">
+    </form>
+    <div>
+        <p>Disclaimer: Textová možnost nemusí na zcela první pokus fungovat správně. 
+            Musí se totiž stáhnout .ttf soubor, který je pro tuto možnost potřeba. 
+            Jakmile se automaticky stáhne do kořenové složky, 
+            tak lze vkládat watermark(y) pomocí textu.
+        </p>
+    </div>
+</body>
+
+</html>
