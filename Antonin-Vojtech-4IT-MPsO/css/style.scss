@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  // Tělo
+
+  body {
+    overflow: overlay;
+
+    // Globálně používané classy a tagy
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: $text-dark-color;
+      font-family: "Amatic SC", cursive;
+      text-align: center;
+      font-weight: 200;
+    }
+    p {
+      color: $text-dark-color;
+      text-align: center;
+      font-weight: 200;
+    }
+    .heading-underline {
+      width: 3rem;
+      height: 0.2rem;
+      background-color: $text-dark-color;
+      margin: 0 auto 2rem;
+    }
+    .btn-lg {
+      font-size: 1.26rem;
+      backdrop-filter: blur(1.25px);
+    }
+    .btn-outline-dark:hover {
+      text-decoration: underline solid $text-light-color;
+    }
+
+    // Header
+
+    header {
+      .home-inner {
+        background-image: url("../img/landing_page_bg_resized.jpg");
+      }
+      .caption {
+        width: 100%;
+        max-width: 100%;
+        position: absolute;
+        top: 38%;
+        z-index: 1;
+        font-weight: 700;
+        color: $text-light-color;
+        h1 {
+          color: $text-light-color;
+          font-size: 3.8rem;
+          letter-spacing: 0.3rem;
+          text-shadow: 0.1rem 0.1rem 0.8rem $text-dark-color;
+        }
+        h3 {
+          //2rem
+          color: $text-light-color;
+          font-size: 3rem;
+          text-shadow: 0.1rem 0.1rem 0.8rem $text-dark-color;
+        }
+        .btn-lg {
+          font-size: 1.25rem;
+        }
+      }
+      .navbar {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 0.9rem;
+        letter-spacing: 0.1rem;
+        background-color: transparent !important;
+        transition: background-color 200ms ease-in-out;
+      }
+      .navbar-dark {
+        .fas.dark {
+          color: $text-dark-color !important;
+        }
+        .hotel-name {
+          display: none;
+          &.unhidden {
+            //1.2rem
+            font-size: 1.2rem;
+            margin: 0;
+            display: inline-flex;
+            padding: 0 1rem 0 1rem;
+            font-weight: 500;
+          }
+        }
+        .navbar-toggler {
+          color: $text-light-color;
+          border-color: $text-light-color;
+          border-width: 0.095rem;
+          &.dark {
+            color: $button-border-color;
+            border-color: $text-dark-color !important;
+          }
+        }
+        .navbar-brand {
+          margin-right: 0;
+          img {
+            height: 7rem;
+            backdrop-filter: blur(2px);
+            border-radius: 4rem;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            &.sized-down {
+              height: 4rem;
+            }
+          }
+        }
+        .navbar-nav {
+          .nav-link {
+            color: $text-light-color;
+            -webkit-transition: color 200ms ease-in-out;
+            transition: color 200ms ease-in-out;
+            &.dark {
+              color: $text-dark-color !important;
+            }
+            &:hover {
+              color: $nav-link-color !important;
+            }
+            &.active {
+              color: $nav-link-color !important;
+            }
+          }
+        }
+      }
+      .scrolled {
+        background-color: $text-light-color !important;
+      }
+      .unscrolled {
+        background-color: transparent !important;
+      }
+    }
+
+    // Main
+
+    main {
+      .offset:before {
+        display: block;
+        content: "";
+        height: 4rem;
+      }
+      .btn-outline-dark {
+        border-color: $button-border-color;
+        &:hover {
+          text-decoration: underline solid $text-light-color;
+        }
+      }
+      .narrow {
+        width: 75%;
+        margin: 1.5rem auto;
+        padding-top: 2rem;
+        text-align: center;
+        h3 {
+          //2rem
+          font-size: 2.3rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        overflow: hidden;
+        padding: 0 2rem;
+      }
+      #welcome {
+        .lead {
+          font-size: 1.1rem;
+        }
+        a {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+      #features {
+        .jumbotron {
+          margin-bottom: 0;
+          padding: 2rem 0 3.5rem;
+          border-radius: 0;
+          background: $jumbotron-background;
+          .row {
+            margin-bottom: 2rem;
+            .col-md {
+              img {
+                border-radius: 0.3rem;
+                width: 100%;
+              }
+            }
+            .col-text {
+              font-size: 1.15rem;
+              background: $col-text-color;
+              box-shadow: 0 0 0.7rem $box-shadow-color;
+              border-radius: 0.3rem;
+              margin: 1rem 0 1rem 0;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              h4 {
+                font-size: 2rem;
+                padding-top: 1rem;
+                text-decoration: underline $text-dark-color;
+                text-decoration-thickness: from-font;
+                font-weight: 200;
+              }
+            }
+          }
+        }
+      }
+      #gallery {
+        width: 75%;
+        margin: 0 auto;
+        overflow: hidden;
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+        }
+        .carousel-caption {
+          position: absolute;
+          color: $text-light-color;
+        }
+      }
+      #priceList {
+        .modal-content {
+          border-radius: 0px;
+          background: $text-light-color;
+          .table {
+            color: $text-dark-color;
+          }
+          .table td,
+          .table th {
+            vertical-align: middle !important;
+          }
+        }
+      }
+      #contacts {
+        overflow: hidden;
+        padding-bottom: 2rem;
+      }
+    }
+    footer {
+      .footer-content {
+        text-align: center;
+        background: $jumbotron-background;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        > h5 {
+          padding-bottom: 1rem;
+          font-size: 1.6rem;
+        }
+        > ul {
+          list-style-type: none;
+          display: inline-flex;
+          > li {
+            margin: 0 1rem 0 1rem;
+            padding-bottom: 1rem;
+            > a {
+              color: $text-dark-color;
+              &:hover {
+                color: $fa-hover-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-button {
+    width: 16px;
+    height: 16px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2e2e2e;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+
+    &:hover {
+      background: #424242;
+    }
+
+    &:active {
+      background: #242424;
+    }
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+
+    &:hover {
+      background: transparent;
+    }
+
+    &:active {
+      background: transparent;
+    }
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}

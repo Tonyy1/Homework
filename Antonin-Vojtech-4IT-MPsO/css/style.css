@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  overflow: overlay;
+}
+
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5 {
+  color: #343a40;
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-weight: 200;
+}
+
+html body p {
+  color: #343a40;
+  text-align: center;
+  font-weight: 200;
+}
+
+html body .heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #343a40;
+  margin: 0 auto 2rem;
+}
+
+html body .btn-lg {
+  font-size: 1.26rem;
+  -webkit-backdrop-filter: blur(1.25px);
+          backdrop-filter: blur(1.25px);
+}
+
+html body .btn-outline-dark:hover {
+  -webkit-text-decoration: underline solid whitesmoke;
+          text-decoration: underline solid whitesmoke;
+}
+
+html body header .home-inner {
+  background-image: url("../img/landing_page_bg_resized.jpg");
+}
+
+html body header .caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+html body header .caption h1 {
+  color: whitesmoke;
+  font-size: 3.8rem;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem #343a40;
+}
+
+html body header .caption h3 {
+  color: whitesmoke;
+  font-size: 3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem #343a40;
+}
+
+html body header .caption .btn-lg {
+  font-size: 1.25rem;
+}
+
+html body header .navbar {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background-color: transparent !important;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+html body header .navbar-dark .fas.dark {
+  color: #343a40 !important;
+}
+
+html body header .navbar-dark .hotel-name {
+  display: none;
+}
+
+html body header .navbar-dark .hotel-name.unhidden {
+  font-size: 1.2rem;
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0 1rem 0 1rem;
+  font-weight: 500;
+}
+
+html body header .navbar-dark .navbar-toggler {
+  color: whitesmoke;
+  border-color: whitesmoke;
+  border-width: 0.095rem;
+}
+
+html body header .navbar-dark .navbar-toggler.dark {
+  color: #696969;
+  border-color: #343a40 !important;
+}
+
+html body header .navbar-dark .navbar-brand {
+  margin-right: 0;
+}
+
+html body header .navbar-dark .navbar-brand img {
+  height: 7rem;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 4rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+html body header .navbar-dark .navbar-brand img.sized-down {
+  height: 4rem;
+}
+
+html body header .navbar-dark .navbar-nav .nav-link {
+  color: whitesmoke;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+
+html body header .navbar-dark .navbar-nav .nav-link.dark {
+  color: #343a40 !important;
+}
+
+html body header .navbar-dark .navbar-nav .nav-link:hover {
+  color: red !important;
+}
+
+html body header .navbar-dark .navbar-nav .nav-link.active {
+  color: red !important;
+}
+
+html body header .scrolled {
+  background-color: whitesmoke !important;
+}
+
+html body header .unscrolled {
+  background-color: transparent !important;
+}
+
+html body main .offset:before {
+  display: block;
+  content: "";
+  height: 4rem;
+}
+
+html body main .btn-outline-dark {
+  border-color: #696969;
+}
+
+html body main .btn-outline-dark:hover {
+  -webkit-text-decoration: underline solid whitesmoke;
+          text-decoration: underline solid whitesmoke;
+}
+
+html body main .narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+html body main .narrow h3 {
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+
+html body main .container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+html body main #welcome .lead {
+  font-size: 1.1rem;
+}
+
+html body main #welcome a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+html body main #features .jumbotron {
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+  background: #f1f1f1;
+}
+
+html body main #features .jumbotron .row {
+  margin-bottom: 2rem;
+}
+
+html body main #features .jumbotron .row .col-md img {
+  border-radius: 0.3rem;
+  width: 100%;
+}
+
+html body main #features .jumbotron .row .col-text {
+  font-size: 1.15rem;
+  background: #fefefe;
+  -webkit-box-shadow: 0 0 0.7rem #cccccc;
+          box-shadow: 0 0 0.7rem #cccccc;
+  border-radius: 0.3rem;
+  margin: 1rem 0 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body main #features .jumbotron .row .col-text h4 {
+  font-size: 2rem;
+  padding-top: 1rem;
+  -webkit-text-decoration: underline #343a40;
+          text-decoration: underline #343a40;
+  text-decoration-thickness: from-font;
+  font-weight: 200;
+}
+
+html body main #gallery {
+  width: 75%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+html body main #gallery .carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+html body main #gallery .carousel-caption {
+  position: absolute;
+  color: whitesmoke;
+}
+
+html body main #priceList .modal-content {
+  border-radius: 0px;
+  background: whitesmoke;
+}
+
+html body main #priceList .modal-content .table {
+  color: #343a40;
+}
+
+html body main #priceList .modal-content .table td,
+html body main #priceList .modal-content .table th {
+  vertical-align: middle !important;
+}
+
+html body main #contacts {
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+html body footer .footer-content {
+  text-align: center;
+  background: #f1f1f1;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+html body footer .footer-content > h5 {
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+html body footer .footer-content > ul {
+  list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+html body footer .footer-content > ul > li {
+  margin: 0 1rem 0 1rem;
+  padding-bottom: 1rem;
+}
+
+html body footer .footer-content > ul > li > a {
+  color: #343a40;
+}
+
+html body footer .footer-content > ul > li > a:hover {
+  color: #636363;
+}
+
+html ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+}
+
+html ::-webkit-scrollbar-button {
+  width: 16px;
+  height: 16px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: #2e2e2e;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background: #424242;
+}
+
+html ::-webkit-scrollbar-thumb:active {
+  background: #242424;
+}
+
+html ::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+html ::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+html ::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+html ::-webkit-scrollbar-corner {
+  background: transparent;
+}
+/*# sourceMappingURL=style.css.map */
